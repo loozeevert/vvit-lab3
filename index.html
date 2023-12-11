@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link 
+    rel="stylesheet"
+    href="./style.css">
+</head>
+<body>
+    <h1
+    style="margin-left: 640px;">
+    Визитка
+    </h1>
+    <h3
+    style="margin-left: 675px;">
+    Про меня
+    </h3>
+    <ul 
+    style="margin-left: 535px;">
+    <li>Ермаков Георгий Андреевич</li>
+    <li>Возраст - 18 лет</li>
+    <li>Ник в <a href="https://t.me/whoisloozeevert">TG</a> - @whoisloozeevert</li>
+    <li>Мой <a href="https://github.com/loozeevert">GitHub</a> - loozeevert</li>
+    </ul>
+    <button
+    style="margin-left: 675px;"
+    onclick="showImage()">Показать/Убрать Лаб1
+    </button>
+    <button
+    style="margin-left: 675px;"
+    style="margin-bottom: 20px;"
+    onclick="showImage2()">Показать/Убрать Лаб2
+    </button>
+    <img
+    src="calculator.jpg"
+    id="myImage"
+    style="display: none; margin-left: 560px; margin-bottom: 250px;"
+    >
+    <img
+    src="lab3.1.jpg"
+    id="myImage2"
+    style="display: none; margin-left: 500px; margin-bottom: 200px;"
+    >
+    <img
+    src="lab3.2.jpg"
+    id="myImage3"
+    style="display: none;  margin-left: 500px; margin-bottom: 400px;"
+    >
+    <script>
+        function showImage() {
+            let elem = document.getElementById("myImage");
+            let style = getComputedStyle(elem);
+            if (style.display === "none") {
+                document.getElementById("myImage").style.display='block'
+                } else if (style.display !== "none") {
+                document.getElementById("myImage").style.display='none';
+            }
+        }
+        function showImage2() {
+            let elem = document.getElementById("myImage2");
+            let style = getComputedStyle(elem);
+            if (style.display === "none") {
+                document.getElementById("myImage2").style.display='block'
+                } else if (style.display !== "none") {
+                document.getElementById("myImage2").style.display='none';
+            }
+        }
+    </script>
+</body>
+</html>

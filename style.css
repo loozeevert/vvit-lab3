@@ -1,0 +1,16 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif 
+}
+
+body {
+    font-size: 30px;
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+a {
+    color: rgb(41, 68, 107);
+}
+
+
+
